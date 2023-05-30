@@ -1,0 +1,10 @@
+<section class="">
+  <p> <= notice></p>
+  <p> Total expenses for <%= current_user.name %> : $<%=@total_expenses %> </p>
+  <div>
+  <% @groups.each do |group| %>
+    <%= render 'shared/group', group:group%>
+<%end%>
+      </div>
+      <%= button_to 'ADD CATEGORY', new_group_path, method: :get, class: ''%>
+</section>
