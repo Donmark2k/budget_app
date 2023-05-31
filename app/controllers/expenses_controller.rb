@@ -21,7 +21,7 @@ class ExpensesController < ApplicationController
     # POST /expenses or /expenses.json
     def create
       @expense = Expense.new(expense_params)
-      @expense.user_id = current_user.id
+      @expense.author_id = current_user.id
 
       # Find the group based on the provided group_id
 
@@ -30,11 +30,10 @@ class ExpensesController < ApplicationController
       respond_to do |format|
         if @expense.save
   
-        #   @group.expenses << @expense
-          # Create a new ExpensesGroup record to associate the expense with the group
+         # Create a new ExpensesGroup record to associate the expense with the group
       ExpensesGroup.create(group: @group, expense: @expense)
   
-          format.html { redirect_to group_url(@group), notice: 'Transaction was successfully created.' }
+          format.html { redirect_to user_group_path(@group.user, @group), notice: 'Transaction was successfully created.' }
           format.json { render :show, status: :created, location: @expense }
         else
           format.html { render :new, status: :unprocessable_entity }
@@ -75,6 +74,10 @@ class ExpensesController < ApplicationController
   
     # Only allow a list of trusted parameters through.
     def expense_params
-      params.require(:expense).permit(:name, :amount, :group_id)
+    #   params.require(:expense).permit(:name, :amount, :group_id)
+    #   params.require(:expense).permit(:name, :amount, :group_id, :user_id)
+    params.require(:expense).permit(:name, :amount, :group_id).merge(author_id: current_user.id)
+
+
     end
   end
