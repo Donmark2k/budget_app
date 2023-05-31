@@ -1,6 +1,7 @@
 <section class="">
   <p class="text-center mb-2"><%= notice %></p>
-  <%= render @group %>
+  <%= render 'shared/detail', group:@group%>
+
   <%# <%= button_to "Remove Category", @group, method: :delete, class: '' %> 
   <% @group.expenses.order(created_at: :desc).each do |g| %>
     <div class="">

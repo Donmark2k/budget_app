@@ -1,6 +1,7 @@
 <section class="">
   <p> <%= notice %></p>
-  <p> Total expenses for <%= current_user.name %> : $<%=@total_expenses %> </p>
+  <p> Total expenses for <%= current_user.name.titleize %> : $<%=@total_expenses %> </p>
+  
   <div>
   <% @groups.each do |group| %>
     <%= render 'shared/group', group:group%>
