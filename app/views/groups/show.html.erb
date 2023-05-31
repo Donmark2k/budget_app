@@ -1,0 +1,16 @@
+<section class="">
+  <p class="text-center mb-2"><%= notice %></p>
+  <%# <%= render @group %> %>
+  <%# <%= button_to "Remove Category", @group, method: :delete, class: '' %> %>
+  <%# <% @group.expenses.order(created_at: :desc).each do |g| %> %>
+    <div class="">
+      <ul class="">
+        <%# <li class=""><%= g.name.capitalize %></li>
+        <%# <li><%= g.created_at.strftime("%d %b %Y") %></li> %>
+        <%# <li>$<%= g.amount %></li> %> %>
+        <%# <li><%= link_to "Delete", g, data: { turbo_method: :delete }, class: '' %></li> %>
+      </ul>
+    </div>
+  <%# <% end %> %>
+<%= button_to 'ADD TRANSACTION', new_user_group_expense_path(user_id: group.user.id, group_id: group.id), method: :get, class: '' %>
+</section>
