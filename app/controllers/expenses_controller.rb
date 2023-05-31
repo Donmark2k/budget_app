@@ -22,12 +22,17 @@ class ExpensesController < ApplicationController
     def create
       @expense = Expense.new(expense_params)
       @expense.user_id = current_user.id
-      @group = Group.find(@expense.group_id)
+
+      # Find the group based on the provided group_id
+
+      @group = Group.find(params[:expense][:group_id])
   
       respond_to do |format|
         if @expense.save
   
-          @group.expenses << @expense
+        #   @group.expenses << @expense
+          # Create a new ExpensesGroup record to associate the expense with the group
+      ExpensesGroup.create(group: @group, expense: @expense)
   
           format.html { redirect_to group_url(@group), notice: 'Transaction was successfully created.' }
           format.json { render :show, status: :created, location: @expense }
