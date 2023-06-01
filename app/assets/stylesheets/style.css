@@ -1,11 +1,7 @@
 body {
     background-color: 	rgba(240, 245, 245, 0.5);
-    margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +10,7 @@ body {
   list-style-type: none;
 }
 
-p {
-    color: #434b54;
-}
+
 .group_card {
     display: flex;
     flex-direction: row;
@@ -104,15 +98,20 @@ h3 {
 }
 
 
-label {
+.labela {
     font-size: 18px;
     font-weight: bold;
     padding-left: 4px;
     text-align: center;
     display: block;
-
 }
 
+.form_divas {
+    display: block;
+    margin: 0 auto;
+    padding-left: 10%;
+    font-size: 18px;
+}
 .category_button {
     padding: 8px;
     margin: 12px auto;
@@ -135,12 +134,7 @@ margin: 0 auto;
     padding: 12px; 
 
 }
-.name_label {
-    padding-right: 12px;
-}
-.transaction label {
-    font-size: 18px;
-}
+
 
 .login-field {
     width: 80%;

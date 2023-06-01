@@ -12,7 +12,7 @@
     </div>
       <br>
      <div class="form_diva">
-    <%= form.label :icon, 'Chose icon:' %><br>
+    <%= form.label :icon, 'Chose icon:', class: 'labela' %><br>
       <%= form.file_field :icon, class: "chose-icon" %>
         <% form.object.errors.full_messages_for(:icon).each do |message|%>
         <div><%= message %></div>
