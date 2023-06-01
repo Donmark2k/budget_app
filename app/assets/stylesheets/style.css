@@ -105,9 +105,12 @@ h3 {
 
 
 label {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     padding-left: 4px;
+    text-align: center;
+    display: block;
+
 }
 
 .category_button {
@@ -118,6 +121,11 @@ label {
     background-color: #5fb523;
     border-radius: 4px;
     color: #fff;
+}
+
+.chose-icon {
+display: block;
+margin: 0 auto;
 }
 
 .transact_card {
