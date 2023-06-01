@@ -87,3 +87,35 @@ h2.group_name a {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.category_form {
+    width: 90%;
+    background-color: #fff;
+    margin: 12px auto;
+    display: block;
+    padding-bottom: 12px;
+    border-radius: 4px;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+    padding: 24px 0;
+}
+
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.category_button {
+    padding: 8px;
+    margin: 12px auto;
+    display: block;
+    border: 2px solid #fff;
+    background-color: #5fb523;
+    border-radius: 4px;
+    color: #fff;
+}
