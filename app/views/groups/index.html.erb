@@ -7,7 +7,7 @@
    <p class="total_amount"> $<%=@total_expenses %> </p>
   </div>
   <div>
-  <% @groups.each do |group| %>
+  <% @groups.includes(:expenses).each do |group| %>
   <%= render partial: 'shared/group', locals: { group: group } %>
 <%end%>
       </div>

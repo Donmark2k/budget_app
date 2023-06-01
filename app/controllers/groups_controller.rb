@@ -4,11 +4,8 @@ class GroupsController < ApplicationController
 
   # GET /groups or /groups.json
   def index
-    # @groups = Group.all
-    # @user = current_user
-    @groups = current_user.groups.all
+    @groups = current_user.groups.all.includes(:expenses)
     @total_expenses = current_user.groups.joins(:expenses).sum('expenses.amount')
-    # @total_expenses = current_user.expenses.sum(:amount)
   end
 
   def splash
@@ -33,20 +30,6 @@ class GroupsController < ApplicationController
   # GET /groups/1/edit
   def edit; end
 
-  # POST /groups or /groups.json
-  # def create
-  #   @group = current_user.groups.new(group_params)
-
-  #   respond_to do |format|
-  #     if @group.save
-  #       format.html { redirect_to user_groups_path(current_user), notice: 'Category was successfully created.' }
-  #       format.json { render :show, status: :created, location: @group }
-  #     else
-  #       format.html { render :new, status: :unprocessable_entity }
-  #       format.json { render json: @group.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
   def create
     @group = current_user.groups.new(group_params)
 
