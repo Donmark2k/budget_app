@@ -53,8 +53,19 @@ class UsersController < ApplicationController
     @user.destroy
     redirect_to root_path, notice: 'User and related expenses were successfully deleted.'
   end
+  
+  def show
+    if params[:id] == 'sign_out'
+      sign_out_and_redirect
+    end
+  end
 
   private
+
+  def sign_out_and_redirect
+    sign_out current_user
+    redirect_to new_user_session_path
+  end
 
   # Use callbacks to share common setup or constraints between actions.
 

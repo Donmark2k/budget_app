@@ -1,3 +1,8 @@
+<div class="sign_out_button">
+  <button>
+    <%= link_to 'Sign out',  destroy_user_session_path, method: :delete %>
+  </button>
+</div>
 <section class="body_container">
   <p> <%= notice %></p>
   <div  class="total_box"> 
