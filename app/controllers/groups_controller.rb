@@ -57,7 +57,7 @@ class GroupsController < ApplicationController
             File.open(icon_filepath, 'wb') do |file|
               file.write(icon_file.read)
             end
-            @group.update(icon: icon_filename)
+            @group.update(icon: "icons/#{icon_filename}")
           end
           redirect_to user_groups_path(current_user), notice: 'Category was successfully created.'
         else
