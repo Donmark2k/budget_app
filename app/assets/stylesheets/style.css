@@ -180,3 +180,7 @@ h2.login {
     background: none;
     padding-top: 14px;
 }
+
+.logout {
+    margin-top: 12px;
+}
