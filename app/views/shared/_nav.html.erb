@@ -1,0 +1,17 @@
+<section class='navbar'>
+  <nav>
+    <span class='back_sign'>
+      <%= link_to symbol, url %>
+    </span>
+    <span class='nav_title'>
+      <%= title %>
+    </span>
+    <span>
+      <% if user_signed_in? %>
+        <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to 'Log in', new_user_session_path %>
+      <% end %>
+    </span>
+  </nav>
+</section>
