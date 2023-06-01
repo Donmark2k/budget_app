@@ -5,5 +5,4 @@ class Expense < ApplicationRecord
   validates :name, presence: true
   validates :amount, numericality: { is_decimal: true }
   attr_accessor :group_id
-
 end
