@@ -2,7 +2,6 @@ class GroupsController < ApplicationController
   before_action :set_group, only: %i[show edit update destroy]
   load_and_authorize_resource
 
-
   # GET /groups or /groups.json
   def index
     # @groups = Group.all
