@@ -1,0 +1,24 @@
+<%= form_with model: group, url: user_groups_path, local: true, multipart: true  do |form| %>  
+  <div class="post_form">
+    <h3> Add New Category </h3>
+      <div>
+      <%= form.label :name  %><br>
+      <%= form.text_field :name, class:''%>
+      <% form.object.errors.full_messages_for(:name).each do |message|%>
+      <div><%= message %></div>
+      <%end%>
+    </div>
+      <br>
+     <div>
+       <%# <%= form.label :icon  %><br>
+    <%# <%= form.select :icon, Dir.glob('app/assets/images/icons/*').map { |f| [File.basename(f, '.*'), f] }, class: '' %> 
+    <%= form.label :icon, 'Select a file:' %><br>
+      <%= form.file_field :icon %>
+        <% form.object.errors.full_messages_for(:icon).each do |message|%>
+        <div><%= message %></div>
+        <%end%>
+     </div>
+     <br>
+      <%= form.submit "Create Category", class:"post_button"%>
+    </div>
+<%end%>
