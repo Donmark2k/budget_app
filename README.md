@@ -43,7 +43,7 @@
 - **[Limit access to web app resources based on authorization rules.]**
 
 - Here is a [Live Demo Link](https://donmark2k.github.io/GD_summit/)
-- Here is a [presentation video link](https://www.loom.com/share/e87f06686ebc44b4a3965d6800c5121f)
+- Here is a [presentation video link](https://www.loom.com/share/eabe14e08e1d4f2b99f2f9c39988d6df)
 
 ## Project Screenshots
 
