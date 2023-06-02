@@ -20,9 +20,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [BLOG APP] <a name="about-project"></a>
+# 📖 [BUDGET APP] <a name="about-project"></a>
 
-**[Blog app]** is an application designed for users to make and view their comments.
+**[Budget app]** is an application designed for users to track their expenditures.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -32,24 +32,22 @@
     <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Make comment as a user]**
-- **[Set up associations between models]**
-- **[Write SQL queries with Active Record]**
-- **[Use validations for models]**
-- **[Write unit tests for models]**
-- **[Write request tests for models]**
-- **[Set up the view model]**
-- **[Use preprocessed HTML file with embedded Ruby code.]**
-- **[Use layouts and templates for shared content.]**
+- **[Users can view their transaction and Categories]**
+- **[Users can create a transaction]**
+- **[Users can create a category.]**
 - **[Limit access to web app resources based on authorization rules.]**
-- **[Build an API that is RESTful.]**
 
+- Here is a [Live Demo Link](https://donmark2k.github.io/GD_summit/)
+- Here is a [presentation video link](https://www.loom.com/share/e87f06686ebc44b4a3965d6800c5121f)
 
+## Project Screenshots
 
+![Home page](./app/assets/images/screenshot.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,7 +73,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/donmark2k/blog_app.git
+  git clone https://github.com/donmark2k/budget_app.git
 ```
 
 ### Install
@@ -83,7 +81,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd blog_app
+  cd budget_app
   bundle install
 ```
 
@@ -112,17 +110,6 @@ To run the project, execute the following command:
 - Twitter: [@Donmark2k](https://twitter.com/donmark2k)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/chukwuemeka-ochuba/)
 
-👤 **John Adibe**
-
-- GitHub: [@Johnadibe](https://github.com/Johnadibe)
-- Twitter: [@JohnAdibe2](https://twitter.com/JohnAdibe2)
-- LinkedIn: [@John Adibe](https://www.linkedin.com/in/john-adibe/)
-
-👤 **Aubin SIMPEZE**
-
-- GitHub: [@githubhandle](https://github.com/aubinleyoung)
-- Twitter: [@twitterhandle](https://twitter.com/Aubin_Simpeze)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aubin-simpeze/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,7 +118,7 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Build the front end of the system]**
+- [ ] **[Add the Calculator]**
 - [ ] **[Style the front end]**
 
 
@@ -144,7 +131,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/donmark2k/blog_app/issues).
+Feel free to check the [issues page](https://github.com/donmark2k/budget_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +140,7 @@ Feel free to check the [issues page](https://github.com/donmark2k/blog_app/issue
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project please leave a STAR to the [Github repo](https://github.com/donmark2k/
-blog_app/)
+budget_app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,7 +148,8 @@ blog_app/)
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to appreciate [Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer.
+I would like to appreciate [Microverse](https://www.microverse.org/) for providing the learning resources for this exercise, and I would specially thank   [Gregoire Vella](https://www.behance.net/gregoirevella) who is the original author of this [design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
