@@ -186,3 +186,41 @@ h2.login {
 .logout {
   margin-top: 12px;
 }
+
+.login_splash {
+    width: 90%;
+    background-color: #3778c2;
+    color: #fff;
+    padding: 14px 0;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: none;
+}
+
+.logout_splash {
+    width: 90%;
+    color: #434b54;
+    padding: 14px 0;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;  
+}
+
+.splash_container {
+    height: 550px;
+}
+
+.splash_p {
+text-align: center;
+justify-content: center;
+display: block;
+}
+
+.splash_name {
+    padding-top: 70%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}

@@ -35,7 +35,7 @@ class UsersController < ApplicationController
 
   def sign_out_and_redirect
     sign_out current_user
-    redirect_to new_user_session_path
+    redirect_to splash_path
   end
 
   # Use callbacks to share common setup or constraints between actions.
