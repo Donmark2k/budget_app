@@ -9,7 +9,6 @@ RSpec.describe 'Users', type: :request do
     @expense_group = ExpensesGroup.create(expense_id: @expense.id, group_id: @group.id)
   end
 
-
   describe 'GET /sign_in' do
     it 'returns http success' do
       get new_user_session_path
