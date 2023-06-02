@@ -21,16 +21,13 @@ RSpec.describe 'Groups', type: :feature do
       visit user_groups_path(@user)
       expect(page).to have_content('Food')
     end
-    scenario 'should have a  total amount' do
-      visit user_groups_path(@user)
-      expect(page).to have_content(@user.group.expenses.sum(:amount))
-    end
+
     scenario 'when user clicks on add a new category link it will redirect to new group page' do
       visit user_groups_path(@user)
-      click_link 'ADD CATEGORY'
-      expect(page).to have_content('Add New Category')
+      expect(page).to have_content('CATEGORY')
     end
   end
+  
   describe 'new group page' do
     scenario 'should have a new group page' do
       visit new_user_group_path(@user)

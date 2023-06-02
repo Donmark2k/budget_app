@@ -10,13 +10,7 @@ class GroupsController < ApplicationController
     @total_expenses = current_user.groups.joins(:expenses).sum('expenses.amount')
   end
 
-  def splash
-    # if user_signed_in?
-    #   redirect_to authenticated_root_path
-    # else
-    #   redirect_to unauthenticated_root_path
-    # end
-  end
+  def splash; end
 
   # GET /groups/1 or /groups/1.json
   def show
