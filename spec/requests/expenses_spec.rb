@@ -10,7 +10,7 @@ RSpec.describe 'Expenses', type: :request do
     @expense_group = ExpensesGroup.create(expense_id: @expense.id, group_id: @group.id)
     sign_in @user
   end
- 
+
   describe 'GET /expenses/new' do
     it 'returns http success' do
       get new_user_group_expense_path(user_id: @user.id, group_id: @group.id)
