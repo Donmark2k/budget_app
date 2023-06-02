@@ -1,0 +1,7 @@
+<div class="group_card">
+<div class="group_card_image">
+<%= image_tag(group.icon, alt: 'Image Description', class: 'group_image') %>
+</div>  
+<h2 class=""><%=  group.name %></h2>
+<p class="amount"> $<%= group.expenses.sum(:amount) %> </p> 
+</div>

@@ -1,0 +1,26 @@
+<%= render partial: 'shared/nav', locals: {title:'TRANSACTION', symbol:'←', url: user_groups_path}%>
+<div class="category_form">
+<%= form_with(model: expense, url: user_group_expenses_path) do |form| %>
+  <div class="transaction">
+    <h3 class="">Add Transaction</h3>
+  
+
+  <div class="form_div">
+    <%= form.text_field :name, placeholder: "Transaction Name", class: "login-field" %>
+  </div><br>
+
+  <div class="form_div">
+    <%= form.text_field :amount, placeholder: "Enter Amount", class: "login-field" %>
+  </div><br>
+
+  <div class="form_divas">
+    <label class="name_label">Select category</label>
+    <%= form.select :group_id, @group.all.collect {|u| [u.name.capitalize, u.id] }, class:'' %>
+  </div>
+
+  <div class=''>
+    <%= form.submit "Add transaction", class:"category_button" %>
+  </div>
+  </div>
+<% end %>
+</div>
