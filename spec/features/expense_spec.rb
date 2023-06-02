@@ -18,8 +18,8 @@ RSpec.describe 'Expenses', type: :feature do
       expect(page).to have_content(@group.name)
     end
     scenario 'should have a expense total' do
-        visit user_group_path(@group.user, @group)
-        expect(page).to have_content(@group.expenses.sum(:amount))
+      visit user_group_path(@group.user, @group)
+      expect(page).to have_content(@group.expenses.sum(:amount))
     end
     scenario 'should have add new expense link' do
       visit new_user_group_expense_path(user_id: @group.user.id, group_id: @group.id)
@@ -32,8 +32,8 @@ RSpec.describe 'Expenses', type: :feature do
   end
   describe 'Expense new page' do
     scenario 'should have a expense new page' do
-        visit new_user_group_expense_path(user_id: @group.user.id, group_id: @group.id)
-        expect(page).to have_content('Add Transaction')
+      visit new_user_group_expense_path(user_id: @group.user.id, group_id: @group.id)
+      expect(page).to have_content('Add Transaction')
     end
   end
 end
