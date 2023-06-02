@@ -208,14 +208,11 @@ h2.login {
     border-radius: 4px;  
 }
 
-.splash_container {
-    height: 550px;
-}
-
 .splash_p {
 text-align: center;
 justify-content: center;
 display: block;
+padding-bottom: 70%;
 }
 
 .splash_name {
