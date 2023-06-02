@@ -27,7 +27,7 @@ RSpec.describe 'Groups', type: :feature do
       expect(page).to have_content('CATEGORY')
     end
   end
-  
+
   describe 'new group page' do
     scenario 'should have a new group page' do
       visit new_user_group_path(@user)
