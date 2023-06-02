@@ -28,10 +28,9 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-  <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
-  </ul>
-
+- <a href="https://www.ruby-lang.org/es/">ROR</a>
+- <a href="https://www.postgresql.org/">Postgresql</a>
+- <a href="https://rspec.info/">Rspec</a>
 
 <!-- Features -->
 
@@ -90,7 +89,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  ruby main.rb
+  rails server
 ```
 ### Run tests
 

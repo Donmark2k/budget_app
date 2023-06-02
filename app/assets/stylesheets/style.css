@@ -221,3 +221,10 @@ h2.login {
   font-style: italic;
   font-weight: bold;
 }
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+}

@@ -15,5 +15,5 @@
          <div><%= g.created_at.strftime("%d %b %Y") %></div>
     </div>
    <% end %> 
-<%= button_to 'ADD TRANSACTION', new_user_group_expense_path(user_id: group.user.id, group_id: group.id), method: :get, class: 'category_button' %>
+<%= button_to 'ADD TRANSACTION', new_user_group_expense_path(user_id: group.user.id, group_id: group.id), method: :get, class: 'category_button fixed-bottom' %>
 </section>
