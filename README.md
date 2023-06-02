@@ -42,7 +42,7 @@
 - **[Users can create a category.]**
 - **[Limit access to web app resources based on authorization rules.]**
 
-- Here is a [Live Demo Link](https://donmark2k.github.io/GD_summit/)
+- Here is a [Live Demo Link](https://budget-application-5ef7.onrender.com/splash)
 - Here is a [presentation video link](https://www.loom.com/share/eabe14e08e1d4f2b99f2f9c39988d6df)
 
 ## Project Screenshots
