@@ -1,17 +1,15 @@
 <div class="group_card">
 <div class="group_card_image">
     
-<%= image_tag(group.icon, alt: 'Image Description') %>
+<%= image_tag(group.icon, alt: 'Image Description', class: 'group_image') %>
 
 </div>
  <div class="group_card_detail">
- <div>
-<%# <h2><%= link_to group.name, group.user %></h2> %>
-<h2><%= link_to group.name, user_group_path(group.user, group) %></h2>
-
-<%# <p> $<%= group.expenses.sum(:amount) %></p> %>
+ <div class="group_card_detail-inner">
+<h2 class="group_name"><%= link_to group.name, user_group_path(group.user, group) %></h2>
+<p class="amount"> $<%= group.expenses.sum(:amount) %></p>
 </div>
-<p> <%= group.created_at.strftime("%d %b %Y") %></p>
+<p class="date"> <%= group.created_at.strftime("%d %b %Y") %></p>
 
 </div>
 </div>

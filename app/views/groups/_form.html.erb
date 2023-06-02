@@ -1,24 +1,24 @@
+<%= render partial: 'shared/nav', locals: {title:'CATEGORY', symbol:'←', url: user_groups_path}%>
+
 <%= form_with model: group, url: user_groups_path, local: true, multipart: true  do |form| %>  
-  <div class="post_form">
-    <h3> Add New Category </h3>
-      <div>
-      <%= form.label :name  %><br>
-      <%= form.text_field :name, class:''%>
+  <div class="category_form">
+    <h3 > Add New Category </h3>
+      <div class="form_div">
+      <% form.label :name  %>
+      <%= form.text_field :name, placeholder: "Category Name", class: "login-field"%>
       <% form.object.errors.full_messages_for(:name).each do |message|%>
       <div><%= message %></div>
       <%end%>
     </div>
       <br>
-     <div>
-       <%# <%= form.label :icon  %><br>
-    <%# <%= form.select :icon, Dir.glob('app/assets/images/icons/*').map { |f| [File.basename(f, '.*'), f] }, class: '' %> 
-    <%= form.label :icon, 'Select a file:' %><br>
-      <%= form.file_field :icon %>
+     <div class="form_diva">
+    <%= form.label :icon, 'Chose icon:', class: 'labela' %><br>
+      <%= form.file_field :icon, class: "chose-icon" %>
         <% form.object.errors.full_messages_for(:icon).each do |message|%>
         <div><%= message %></div>
         <%end%>
      </div>
      <br>
-      <%= form.submit "Create Category", class:"post_button"%>
+      <%= form.submit "Create Category", class:"category_button"%>
     </div>
 <%end%>

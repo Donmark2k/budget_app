@@ -1,17 +1,19 @@
+<%= render partial: 'shared/nav', locals: {title:'TRANSACTION', symbol:'←', url: :back}%>
+
 <section class="">
   <p class="text-center mb-2"><%= notice %></p>
   <%= render 'shared/detail', group:@group%>
-
-  <%# <%= button_to "Remove Category", @group, method: :delete, class: '' %> 
+ 
   <% @group.expenses.order(created_at: :desc).each do |g| %>
-    <div class="">
-      <ul class="">
+    <div class="transact_card">
+    <h4>TRANSACTION NO: <%= g.id%> </h4>
+      <ul class="group_card_detail-inner">
         <li class=""><%= g.name.capitalize %></li>
-        <li><%= g.created_at.strftime("%d %b %Y") %></li>
+        
         <li>$<%= g.amount %></li>
-        <%# <li><%= link_to "Delete", g, data: { turbo_method: :delete }, class: ''%></li> %>
-      </ul>
+         </ul>
+         <div><%= g.created_at.strftime("%d %b %Y") %></div>
     </div>
    <% end %> 
-<%= button_to 'ADD TRANSACTION', new_user_group_expense_path(user_id: group.user.id, group_id: group.id), method: :get, class: '' %>
+<%= button_to 'ADD TRANSACTION', new_user_group_expense_path(user_id: group.user.id, group_id: group.id), method: :get, class: 'category_button' %>
 </section>
